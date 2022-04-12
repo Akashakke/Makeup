@@ -17,7 +17,9 @@ const getData = async () => {
   if(data[i].image_link && data[i].brand && data[i].name && data[i].price) {
     var ele = document.getElementById("card");
     ele.innerHTML += `
-           <div class="card-type" style="width: 18rem;">
+           <div class="col">
+    <div class="card">
+           <div class="card-type">
 <img src="${data[i].image_link}" class="card-img-top" alt="">
 <div class="card-body">
   <p class="card-text">Brand: ${data[i].brand}
